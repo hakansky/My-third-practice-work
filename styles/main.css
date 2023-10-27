@@ -1,0 +1,250 @@
+body {
+    box-sizing: border-box;
+    background-color: #131316;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    @font-face {
+        font-family: Montserrat;
+        src: url(./assets/Montserrat-Regular.tff);
+    }
+    font-family: Montserrat;
+}
+
+/* LEFT CONTENT */
+
+.wrapper .left-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #202026;
+    color: white;
+}
+
+/* CANDIDATE PHOTO */
+
+.wrapper .left-content .candidate-photo img {
+    max-width: 300px;
+}
+
+/* CANDIDATE EDUCATION */
+
+.wrapper .left-content .candidate-education h2 {
+    font-size: 24px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fecb00;
+}
+
+.wrapper .left-content .candidate-education h3 {
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.wrapper .left-content .candidate-education h4 {
+    font-size: 16px;
+    margin-left: 40px;
+    font-style: italic;
+}
+
+.wrapper .left-content .candidate-education p {
+    font-size: 12px;
+    margin-left: 40px;
+}
+
+/* CANDIDATE SKILLS */
+
+.wrapper .left-content .candidate-skills div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .left-content .candidate-skills h2 {
+    font-size: 24px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fecb00;
+}
+
+.wrapper .left-content .candidate-skills label {
+    font-size: 16px;
+    margin-left: 40px;
+    font-style: italic;
+}
+
+.wrapper .left-content .candidate-skills input {
+    margin-right: 40px;
+}
+
+/* CANDIDATE CONTACTS */
+
+.wrapper .left-content .candidate-contacts {
+    padding-top: 20px;
+}
+
+.wrapper .left-content .candidate-contacts h3 {
+    font-size: 20px;
+    border-left: 50px solid #fecb00;
+    background-color: #292a30;
+    padding-left: 20px;
+}
+
+.wrapper .left-content .candidate-contacts p {
+    font-size: 12px;
+    margin-left: 50px;
+}
+
+.wrapper .left-content .candidate-contacts p:hover {
+    cursor: pointer;
+}
+
+/* RIGHT CONTENT */
+
+.wrapper .right-content {
+    color: #202026;
+    background-color: white;
+}
+
+/* CANDIDATE NAME */
+
+.wrapper .right-content .candidate-name {
+    margin-top: 100px;
+    background-color: #fecb00;
+    padding: 40px;
+}
+
+.wrapper .right-content .candidate-name h1 {
+    font-size: 30px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.wrapper .right-content .candidate-name h2 {
+    font-size: 20px;
+    font-style: italic;
+    color: rgba(32, 32, 38, 0.5);
+}
+
+.wrapper .right-content .candidate-name h3 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* CANDIDATE ABOUT */
+
+.wrapper .right-content .candidate-about {
+    padding-top: 50px;
+}
+
+.wrapper .right-content .candidate-about h2 {
+    font-size: 24px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #202026;
+}
+
+.wrapper .right-content .candidate-about p {
+    margin-left: 80px;
+    font-size: 12px;
+    margin-right: 80px;
+}
+
+/* CANDIDATE WORK EXPERIENCE */
+
+.wrapper .right-content .candidate-work-experience {
+    padding-top: 50px;
+}
+
+.wrapper .right-content .candidate-work-experience .jobs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.wrapper .right-content .candidate-work-experience h2 {
+    font-size: 24px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #202026;
+}
+
+.wrapper .right-content .candidate-work-experience .jobs p {
+    font-size: 12px;
+    margin-left: 50px;
+    font-weight: 800;
+}
+
+.wrapper .right-content .candidate-work-experience .jobs .job {
+    width: 70%;
+}
+
+.wrapper .right-content .candidate-work-experience .jobs .job p {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 0;
+    font-style: italic;
+}
+
+/* CANDIDATE SOCIAL MEDIA */
+
+.wrapper .right-content .candidate-social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px 0px 150px;
+    padding-top: 100px;
+}
+
+.wrapper .right-content .candidate-social-media h3 {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+} 
+
+.wrapper .right-content .candidate-social-media .social-media {
+    display: flex;
+}
+
+/* MEDIA */
+
+@media (max-width: 710px) {
+    .wrapper {
+        flex-wrap: wrap;
+    }
+    .wrapper .left-content {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        max-width: 700px;
+        width: 100%;
+    }
+    .wrapper .left-content .candidate-photo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper {
+        max-width: 450px;
+        width: 100%;
+    }
+    .wrapper .right-content .candidate-name h1 {
+        font-size: 18px;
+    }
+    .wrapper .right-content .candidate-name h2 {
+        font-size: 12px;
+    }
+    .wrapper .right-content .candidate-name h3 {
+        font-size: 15px;
+    }
+    .wrapper .right-content .candidate-social-media h3 {
+        font-size: 13px;
+    }
+}
