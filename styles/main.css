@@ -11,7 +11,7 @@ body {
     max-width: 1000px;
     @font-face {
         font-family: Montserrat;
-        src: url(./assets/Montserrat-Regular.tff);
+        src: url(../fonts/Montserrat-Regular.tff);
     }
     font-family: Montserrat;
 }
